@@ -1,18 +1,4 @@
-const gradePoints = {
-    'A': 4.0,
-    'A-': 3.7,
-    'B+': 3.3,
-    'B': 3.0,
-    'B-': 2.7,
-    'C+': 2.3,
-    'C': 2.0,
-    'C-': 1.7,
-    'D+': 1.3,
-    'D': 1.0,
-    'D-': 0.7,
-    'F': 0.0
-};
-    let subjects = [];
+
     let subjectCount = 0;
     let totalCredits = 0;
     let totalPoints = 0;
@@ -22,7 +8,6 @@ const gradePoints = {
       let index = parseInt(document.getElementById('Index').value);
       let credit = parseInt(document.getElementById('SKS').value);
       
-      subjects.push({ subject, index, credit });
       totalCredits += credit;
       totalPoints += index * credit;
       subjectCount += 1;
